@@ -2,7 +2,7 @@ package trabalho_final;
 
 import java.util.Scanner;
 
-public class Teste {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         CadastroPacientes cadastro = new CadastroPacientes();
