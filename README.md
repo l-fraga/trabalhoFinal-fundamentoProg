@@ -5,4 +5,4 @@ Dificuldades:
 Métodos relacionados a posições nos vetores, relação do vetor com o objeto.
 
 Nota de Superação:
-Superamos as dificuldades adaptando os exercícios dados pela profesora anteriormente, utilizando a lógica de programação aprendida na sala de aula e principalmente nas tentativas e erross.
+Superamos as dificuldades adaptando os exercícios dados pela profesora anteriormente, utilizando a lógica de programação aprendida na sala de aula e principalmente nas tentativas e erros.
