@@ -16,7 +16,8 @@ public class CadastroPacientes {
     }
 
     public String inserirPaciente(Paciente p) {
-         if (count < paciente.length) {
+
+        if (count < paciente.length) {
             paciente[count] = p;
             p.setNome();
             p.setCpf();
@@ -32,14 +33,15 @@ public class CadastroPacientes {
 
     public void removerPaciente() {
         if (count == 0) {
+            System.out.println();
             System.out.println("Não há pacientes cadastrados. Por favor, insira um paciente primeiro.");
             return;
         }
-    
+
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite o nome do paciente a ser removido: ");
         String nome = scanner.nextLine();
-    
+
         int index = -1;
         for (int i = 0; i < count; i++) {
             if (paciente[i].getNome().equalsIgnoreCase(nome)) {
@@ -47,7 +49,7 @@ public class CadastroPacientes {
                 break;
             }
         }
-    
+
         if (index != -1) {
             for (int i = index; i < count - 1; i++) {
                 paciente[i] = paciente[i + 1];
@@ -59,8 +61,6 @@ public class CadastroPacientes {
             System.out.println("Paciente não existe e por isso não pode ser removido. Digite outro paciente.");
         }
     }
-    
-    
 
     public void imprimeVetor() {
         for (int i = 0; i < paciente.length; i++) {
