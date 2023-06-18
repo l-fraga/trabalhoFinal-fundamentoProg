@@ -16,14 +16,14 @@ public class CadastroPacientes {
     }
 
     public String inserirPaciente(Paciente p) {
-        p.setNome();
-        p.setCpf();
-        p.setTelefone();
-        p.setConvenio();
-        p.setDiagnostico();
-        p.setNumeroConsultasMes();
-        if (count < paciente.length) {
+         if (count < paciente.length) {
             paciente[count] = p;
+            p.setNome();
+            p.setCpf();
+            p.setTelefone();
+            p.setConvenio();
+            p.setDiagnostico();
+            p.setNumeroConsultasMes();
             count++;
             return "Paciente inserido com sucesso!";
         }
