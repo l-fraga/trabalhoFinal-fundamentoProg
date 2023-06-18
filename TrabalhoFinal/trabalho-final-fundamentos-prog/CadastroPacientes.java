@@ -69,7 +69,7 @@ public class CadastroPacientes {
         System.out.println();
     }
 
-    public void odemAlfabetica() {
+    public void ordemAlfabetica() {
         Paciente[] sortedPacientes = Arrays.copyOf(paciente, count);
         Arrays.sort(sortedPacientes, (p1, p2) -> p1.getNome().compareToIgnoreCase(p2.getNome()));
         System.out.println("====Nomes em ordem alfabética====");
