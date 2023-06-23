@@ -107,7 +107,7 @@ public class CadastroPacientes {
         int countOutro = 0;
 
         for (int i = 0; i < count; i++) {
-            String diagnostico = paciente[i].getConvenio();
+            String diagnostico = paciente[i].getDiagnostico();
 
             if (diagnostico.equalsIgnoreCase("Covid")) {
                 countCovid++;
